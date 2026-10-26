@@ -196,6 +196,26 @@ export const Header: React.FC<HeaderProps> = ({
             📜 Quá Khứ Đơn (Trang 29-31)
           </button>
           <button
+            onClick={() => onNavChange('pastcontinuous')}
+            className={`px-3 py-1.5 rounded-lg shrink-0 transition-all flex items-center gap-1.5 ${
+              activeNav === 'pastcontinuous'
+                ? 'bg-purple-600 text-white shadow-xs'
+                : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'
+            }`}
+          >
+            ⚡ QK Tiếp Diễn (Trang 32-33)
+          </button>
+          <button
+            onClick={() => onNavChange('pastperfect')}
+            className={`px-3 py-1.5 rounded-lg shrink-0 transition-all flex items-center gap-1.5 ${
+              activeNav === 'pastperfect'
+                ? 'bg-rose-600 text-white shadow-xs'
+                : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'
+            }`}
+          >
+            🎯 QK Hoàn Thành (Trang 34-35)
+          </button>
+          <button
             onClick={() => onNavChange('timeline')}
             className={`px-3 py-1.5 rounded-lg shrink-0 transition-all flex items-center gap-1.5 ${
               activeNav === 'timeline'

@@ -36,6 +36,8 @@ import { PresentContinuousLab } from './components/PresentContinuousLab';
 import { PresentPerfectLab } from './components/PresentPerfectLab';
 import { PresentPerfectContinuousLab } from './components/PresentPerfectContinuousLab';
 import { PastSimpleLab } from './components/PastSimpleLab';
+import { PastContinuousLab } from './components/PastContinuousLab';
+import { PastPerfectLab } from './components/PastPerfectLab';
 import { PdfModal } from './components/PdfModal';
 
 const STORAGE_KEY = 'grammarvisi_user_progress_v1';
@@ -207,6 +209,18 @@ export default function App() {
               </div>
             )}
 
+            {activeNav === 'pastcontinuous' && (
+              <div className="space-y-6">
+                <PastContinuousLab onOpenPdf={() => handleOpenPdf(32, 'Quá Khứ Tiếp Diễn (Trang 32-33)')} />
+              </div>
+            )}
+
+            {activeNav === 'pastperfect' && (
+              <div className="space-y-6">
+                <PastPerfectLab onOpenPdf={() => handleOpenPdf(34, 'Quá Khứ Hoàn Thành (Trang 34-35)')} />
+              </div>
+            )}
+
             {activeNav === 'timeline' && (
               <div className="space-y-6">
                 <InteractiveTimeline />
@@ -313,6 +327,18 @@ export default function App() {
                         className="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold transition-all shadow-md flex items-center gap-1.5"
                       >
                         <span>📜 Quá Khứ Đơn Lab</span>
+                      </button>
+                      <button
+                        onClick={() => handleNavChange('pastcontinuous')}
+                        className="px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold transition-all shadow-md flex items-center gap-1.5"
+                      >
+                        <span>⚡ QK Tiếp Diễn Lab</span>
+                      </button>
+                      <button
+                        onClick={() => handleNavChange('pastperfect')}
+                        className="px-4 py-2 rounded-xl bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold transition-all shadow-md flex items-center gap-1.5"
+                      >
+                        <span>🎯 QK Hoàn Thành Lab</span>
                       </button>
                       <button
                         onClick={() => handleNavChange('timeline')}

@@ -31,7 +31,7 @@ export interface ExerciseItem {
 }
 
 export interface VisualComponentType {
-  type: 'timeline' | 'passive_transformer' | 'speech_shift' | 'conditionals_slider' | 'preposition_map' | 'comparison_scale' | 'mnemonic_card' | 'pronouns_visualizer' | 'this_that_lab' | 'nouns_visualizer' | 'present_simple_lab' | 'present_continuous_lab' | 'present_perfect_lab' | 'present_perfect_continuous_lab' | 'past_simple_lab';
+  type: 'timeline' | 'passive_transformer' | 'speech_shift' | 'conditionals_slider' | 'preposition_map' | 'comparison_scale' | 'mnemonic_card' | 'pronouns_visualizer' | 'this_that_lab' | 'nouns_visualizer' | 'present_simple_lab' | 'present_continuous_lab' | 'present_perfect_lab' | 'present_perfect_continuous_lab' | 'past_simple_lab' | 'past_continuous_lab' | 'past_perfect_lab';
   data?: Record<string, any>;
 }
 

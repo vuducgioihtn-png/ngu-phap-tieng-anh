@@ -1160,6 +1160,211 @@ export const GRAMMAR_TOPICS: GrammarTopic[] = [
     ]
   },
 
+  // 13. PAST CONTINUOUS (QUÁ KHỨ TIẾP DIỄN)
+  {
+    id: 13,
+    slug: 'past-continuous',
+    title: 'Quá Khứ Tiếp Diễn (Past Continuous)',
+    englishTitle: 'Past Continuous Tense (Trang 32 - 33)',
+    category: 'tenses',
+    pageNumber: 32,
+    difficulty: 'Trung cấp',
+    summary: 'Diễn tả hành động đang diễn ra tại một thời điểm cụ thể trong quá khứ, hoặc hành động đang xảy ra (Dài - was/were + V-ing) thì có hành động khác xen vào ngắn hơn (Quá Khứ Đơn) - Trang 32 & 33 sách Lê Công Đức.',
+    mnemonics: [
+      '⏳ Cấu trúc vàng: I, He, She, It, Danh từ số ít ➔ WAS + V-ING | You, We, They, Danh từ số nhiều ➔ WERE + V-ING',
+      '⚡ Thần chú Dài vs Ngắn: Hành động DÀI đang diễn ra chia Quá Khứ Tiếp Diễn, hành động NGẮN xen vào chia Quá Khứ Đơn',
+      '🎯 Thần chú While vs When: While + Quá Khứ Tiếp Diễn (While I was driving home...), When + Quá Khứ Đơn (When I came...)',
+      '💡 Tạm thời vs Lâu bền: Tạm thời dùng QKTD ("was living in Eastbourne"), lâu dài định cư dùng QKĐ ("lived in London for ten years")',
+      '⚠️ Thói quen bất ngờ / Phàn nàn: Đi với always / continually ("was always turning up without warning")'
+    ],
+    formulas: [
+      {
+        label: 'Cấu trúc Khẳng định, Phủ định & Nghi vấn',
+        structure: '(+) S(I, He, She, It, N ít) + WAS + V-ING\n(+) S(You, We, They, N nhiều) + WERE + V-ING\n(-) S + wasn\'t / weren\'t + V-ING\n(?) Was / Were + S + V-ING ...? ➔ Yes, S was/were / No, S wasn\'t/weren\'t',
+        example: {
+          en: 'She was doing her homework at 8 o\'clock last night.',
+          vi: 'Cô ấy đã đang làm bài tập về nhà vào lúc 8 giờ tối hôm qua (Trang 32).',
+          breakdown: [
+            { label: 'S (ít)', text: 'She', color: 'bg-blue-100 text-blue-800' },
+            { label: 'was', text: 'was', color: 'bg-purple-100 text-purple-800' },
+            { label: 'V-ing', text: 'doing her homework', color: 'bg-emerald-100 text-emerald-800' },
+            { label: 'Thời điểm cụ thể', text: 'at 8 o\'clock last night', color: 'bg-amber-100 text-amber-800' }
+          ]
+        }
+      },
+      {
+        label: 'Mô hình Dài xen Ngắn (While / When)',
+        structure: 'While + S + was/were + V-ing (hành động DÀI), S + V2/ed (hành động NGẮN xen vào)\nWhen + S + V2/ed (hành động NGẮN), S + was/were + V-ing (hành động DÀI)',
+        example: {
+          en: 'I saw an accident while I was driving home from work.',
+          vi: 'Tôi nhìn thấy một vụ tai nạn khi tôi đang lái xe từ chỗ làm về nhà (Trang 32).',
+          breakdown: [
+            { label: 'Hành động ngắn (QKĐ)', text: 'I saw an accident', color: 'bg-rose-100 text-rose-800' },
+            { label: 'Liên từ', text: 'while', color: 'bg-amber-100 text-amber-800' },
+            { label: 'Hành động dài (QKTD)', text: 'I was driving home', color: 'bg-indigo-100 text-indigo-800' }
+          ]
+        }
+      }
+    ],
+    detailedTheory: [
+      {
+        heading: '5 Cách sử dụng cốt lõi của Thì Quá Khứ Tiếp Diễn (Trang 32)',
+        content: [
+          '1. Diễn tả hành động đang diễn ra tại 1 thời điểm cụ thể nào đó trong quá khứ: "She was talking to a strange man this time yesterday.", "What were they doing at eight o\'clock last night?".',
+          '2. Diễn tả hành động đang xảy ra ở quá khứ thì có hành động khác nảy sinh trong quá trình hành động ban đầu đang xảy ra hoặc xen vào: Hành động kéo dài hơn dùng Quá Khứ Tiếp Diễn, hành động ngắn hơn dùng Quá Khứ Đơn ("When I came yesterday, he was sleeping.", "I saw an accident while I was driving home from work.").',
+          '3. Diễn tả hành động mang tính tạm thời (QKTD), còn lâu bền hơn thì dùng QKĐ: "It happened when I was living in Eastbourne last year" (tạm thời) vs "I lived in London for ten years while I was a child" (lâu dài).',
+          '4. Hay sử dụng với động từ say để nhấn mạnh những gì được nói: "John was saying that he still can\'t find a job."',
+          '5. Với always, continually: Diễn đạt việc thường xuyên xảy ra rất bất ngờ hoặc không theo kế hoạch trước (phàn nàn): "Aunt Lucy was always turning up without warning and bringing us presents.", "I didn\'t like him – he was continually borrowing money."'
+        ]
+      }
+    ],
+    visualType: 'past_continuous_lab',
+    exercises: [
+      {
+        id: 'ex-pc-1',
+        type: 'fill',
+        prompt: 'I __________ (play) soccer with my friends at 9 p.m yesterday.',
+        contextHint: 'at 9 p.m yesterday là thời điểm cụ thể, I đi với was + V-ing',
+        correctAnswer: 'was playing',
+        explanation: 'Thời điểm cụ thể trong quá khứ (at 9 p.m yesterday) ➔ dùng Quá Khứ Tiếp Diễn: was playing (Câu 1 Bài 1 Trang 33).'
+      },
+      {
+        id: 'ex-pc-2',
+        type: 'fill',
+        prompt: 'We __________ (sit) in a restaurant when the accident happened.',
+        contextHint: 'We đi với were, lưu ý gấp đôi phụ âm t của sit',
+        correctAnswer: 'were sitting',
+        explanation: 'Hành động đang ngồi trong nhà hàng kéo dài ➔ were sitting (sit gấp đôi chữ t) thì tai nạn xảy ra xen vào (Câu 3 Bài 1 Trang 33).'
+      },
+      {
+        id: 'ex-pc-3',
+        type: 'fill',
+        prompt: 'While we were cooking, the phone __________ (ring).',
+        contextHint: 'Chuông reo là hành động ngắn xen vào ➔ chia Quá Khứ Đơn',
+        correctAnswer: 'rang',
+        explanation: 'Khi chúng tôi đang nấu ăn (dài), chuông reo chen ngang (ngắn) ➔ dùng Quá Khứ Đơn: ring biến thành rang (Câu 3 Bài 2 Trang 33).'
+      },
+      {
+        id: 'ex-pc-4',
+        type: 'fill',
+        prompt: 'She __________ (make) a cake when the light went out.',
+        contextHint: 'Đang làm bánh thì đèn tắt (went out)',
+        correctAnswer: 'was making',
+        explanation: 'Hành động đang làm bánh kéo dài thì bị cúp điện chen ngang ➔ was making (make bỏ e thêm ing) (Câu 6 Bài 2 Trang 33).'
+      },
+      {
+        id: 'ex-pc-5',
+        type: 'fill',
+        prompt: 'I went to that park very often while I __________ (live) in London for my MA course.',
+        contextHint: 'Tạm thời đi học khóa MA ➔ dùng Quá Khứ Tiếp Diễn',
+        correctAnswer: 'was living',
+        explanation: 'Sống tạm thời trong thời gian học cao học (MA course) ➔ was living (Câu 9 Bài 1 Trang 33).'
+      }
+    ]
+  },
+
+  // 14. PAST PERFECT (QUÁ KHỨ HOÀN THÀNH)
+  {
+    id: 14,
+    slug: 'past-perfect',
+    title: 'Quá Khứ Hoàn Thành (Past Perfect)',
+    englishTitle: 'Past Perfect Tense (Trang 34 - 35)',
+    category: 'tenses',
+    pageNumber: 34,
+    difficulty: 'Trung cấp',
+    summary: 'Diễn tả hành động đã xảy ra và hoàn tất TRƯỚC một thời điểm hoặc một hành động khác trong quá khứ (Trang 34 & 35 sách Lê Công Đức). Áp dụng công thức S + had + V3/ED cho tất cả các ngôi.',
+    mnemonics: [
+      '⏳ Cấu trúc bất biến: S + HAD + V3/ED (áp dụng cho mọi ngôi I, You, We, They, He, She, It, Danh từ số ít hay số nhiều)',
+      '⚡ Quy tắc vàng Trước - Sau: Hành động xảy ra TRƯỚC dùng Quá Khứ Hoàn Thành, hành động xảy ra SAU dùng Quá Khứ Đơn',
+      '🎯 Thần chú Before - After: QKHT + before + QKĐ (Trước Before là QKHT) | QKĐ + after + QKHT (Sau After là QKHT)',
+      '💡 Dấu hiệu nhận biết: By the time + QKĐ, QKHT | By 2010, before 1975, before it was shown...',
+      '🏆 Cấu trúc số lần trong quá khứ: It was the first / second / third time + (that) + S + had + V3/ed'
+    ],
+    formulas: [
+      {
+        label: 'Cấu trúc Khẳng định, Phủ định & Nghi vấn',
+        structure: '(+) S + had + V3/ED\n(-) S + had not (hadn\'t) + V3/ED\n(?) Had + S + V3/ED ...? ➔ Yes, S had / No, S hadn\'t',
+        example: {
+          en: 'We had left before you came.',
+          vi: 'Chúng tôi đã rời đi trước khi bạn đến (Trang 34).',
+          breakdown: [
+            { label: 'S', text: 'We', color: 'bg-blue-100 text-blue-800' },
+            { label: 'had + V3 (xảy ra trước)', text: 'had left', color: 'bg-purple-100 text-purple-800' },
+            { label: 'before', text: 'before', color: 'bg-amber-100 text-amber-800' },
+            { label: 'QKĐ (xảy ra sau)', text: 'you came', color: 'bg-emerald-100 text-emerald-800' }
+          ]
+        }
+      },
+      {
+        label: 'Mô hình liên từ Trước - Sau',
+        structure: 'By the time + S + V2/ed (SAU), S + had + V3/ed (TRƯỚC)\nS + had + V3/ed + before + S + V2/ed\nS + V2/ed + after + S + had + V3/ed',
+        example: {
+          en: 'By the time you arrived, I had prepared our dinner.',
+          vi: 'Vào lúc bạn đến, tôi đã chuẩn bị xong bữa tối cho chúng ta rồi (Trang 34).',
+          breakdown: [
+            { label: 'Liên từ', text: 'By the time', color: 'bg-amber-100 text-amber-800' },
+            { label: 'Xảy ra sau (QKĐ)', text: 'you arrived', color: 'bg-blue-100 text-blue-800' },
+            { label: 'Xảy ra trước (QKHT)', text: 'I had prepared our dinner', color: 'bg-purple-100 text-purple-800' }
+          ]
+        }
+      }
+    ],
+    detailedTheory: [
+      {
+        heading: '4 Cách sử dụng cốt lõi của Thì Quá Khứ Hoàn Thành (Trang 34)',
+        content: [
+          '1. Diễn tả hành động đã xảy ra rồi trước 1 thời điểm nào đó trong quá khứ: "Duc Tri High School had been built by August 2010.", "I suddenly realized that we had met before.", "She had lived in Hue before 1975.".',
+          '2. Diễn tả hành động đã xảy ra trước 1 hành động nào đó trong quá khứ: Nếu hành động nào xảy ra trước thì dùng quá khứ hoàn thành, hành động nào xảy ra sau đó thì dùng thì quá khứ đơn ("By the time you arrived, I had prepared our dinner.", "I went to school after I had eaten my breakfast.", "I had met him before he flew to New York.").',
+          '3. Để nói về hành động nào đó đã xảy ra trong bao lâu rồi cho đến 1 thời điểm nào đó trong quá khứ: "I was sorry to sell my car. I had had it since College." (sở hữu từ thời đại học cho đến lúc bán).',
+          '4. Cấu trúc số lần trong quá khứ: It was the first / second / third ... + (that) + subject + had + V3/ed ("It was the first time I had eaten such delicious food.", "It was the second time that I had sung this song.").'
+        ]
+      }
+    ],
+    visualType: 'past_perfect_lab',
+    exercises: [
+      {
+        id: 'ex-pp-1',
+        type: 'fill',
+        prompt: 'Did you think that we __________ (meet) before?',
+        contextHint: 'Hành động gặp xảy ra trước thời điểm nghĩ ➔ had + V3',
+        correctAnswer: 'had met',
+        explanation: 'Gặp nhau trước thời điểm nghĩ trong quá khứ ➔ dùng Quá Khứ Hoàn Thành: had met (Câu 1 Bài 1 Trang 35).'
+      },
+      {
+        id: 'ex-pp-2',
+        type: 'fill',
+        prompt: 'We __________ (not finish) our assignments before you came.',
+        contextHint: 'Trước before chia QKHT phủ định',
+        correctAnswer: ["hadn't finished", 'had not finished'],
+        explanation: 'Trước khi bạn đến (before you came - QKĐ) thì bài tập chưa xong (xảy ra trước đó) ➔ hadn\'t finished (Câu 2 Bài 1 Trang 35).'
+      },
+      {
+        id: 'ex-pp-3',
+        type: 'fill',
+        prompt: 'My brother __________ (graduate) by 2010.',
+        contextHint: 'by + mốc thời gian quá khứ (by 2010) ➔ QKHT',
+        correctAnswer: 'had graduated',
+        explanation: 'Dấu hiệu "by 2010" ➔ hành động tốt nghiệp hoàn thành trước năm 2010 ➔ had graduated (Câu 3 Bài 1 Trang 35).'
+      },
+      {
+        id: 'ex-pp-4',
+        type: 'fill',
+        prompt: 'This was the third time she __________ (visit) this country.',
+        contextHint: 'This was the third time + had + V3/ed',
+        correctAnswer: 'had visited',
+        explanation: 'Cấu trúc "This was the third time..." trong quá khứ bắt buộc đi với quá khứ hoàn thành ➔ had visited (Câu 4 Bài 1 Trang 35).'
+      },
+      {
+        id: 'ex-pp-5',
+        type: 'fill',
+        prompt: 'They played soccer after they __________ (study) for 5 hours.',
+        contextHint: 'Sau after là hành động xảy ra trước ➔ chia QKHT',
+        correctAnswer: 'had studied',
+        explanation: 'Học bài 5 tiếng xảy ra trước (had studied) rồi sau đó mới đi đá bóng (played) (Câu 7 Bài 2 Trang 35).'
+      }
+    ]
+  },
+
   // 20. PRESENT SIMPLE PASSIVE (BỊ ĐỘNG HIỆN TẠI ĐƠN)
   {
     id: 20,
