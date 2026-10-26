@@ -35,6 +35,7 @@ import { PresentSimpleLab } from './components/PresentSimpleLab';
 import { PresentContinuousLab } from './components/PresentContinuousLab';
 import { PresentPerfectLab } from './components/PresentPerfectLab';
 import { PresentPerfectContinuousLab } from './components/PresentPerfectContinuousLab';
+import { PastSimpleLab } from './components/PastSimpleLab';
 import { PdfModal } from './components/PdfModal';
 
 const STORAGE_KEY = 'grammarvisi_user_progress_v1';
@@ -200,6 +201,12 @@ export default function App() {
               </div>
             )}
 
+            {activeNav === 'pastsimple' && (
+              <div className="space-y-6">
+                <PastSimpleLab onOpenPdf={() => handleOpenPdf(29, 'Quá Khứ Đơn (Trang 29-31)')} />
+              </div>
+            )}
+
             {activeNav === 'timeline' && (
               <div className="space-y-6">
                 <InteractiveTimeline />
@@ -300,6 +307,12 @@ export default function App() {
                         className="px-4 py-2 rounded-xl bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold transition-all shadow-md flex items-center gap-1.5"
                       >
                         <span>⏳ HTHT Tiếp Diễn Lab</span>
+                      </button>
+                      <button
+                        onClick={() => handleNavChange('pastsimple')}
+                        className="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold transition-all shadow-md flex items-center gap-1.5"
+                      >
+                        <span>📜 Quá Khứ Đơn Lab</span>
                       </button>
                       <button
                         onClick={() => handleNavChange('timeline')}

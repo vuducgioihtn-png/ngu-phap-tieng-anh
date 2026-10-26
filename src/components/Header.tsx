@@ -186,6 +186,16 @@ export const Header: React.FC<HeaderProps> = ({
             ⏳ HTHT Tiếp Diễn (Trang 26-28)
           </button>
           <button
+            onClick={() => onNavChange('pastsimple')}
+            className={`px-3 py-1.5 rounded-lg shrink-0 transition-all flex items-center gap-1.5 ${
+              activeNav === 'pastsimple'
+                ? 'bg-indigo-600 text-white shadow-xs'
+                : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'
+            }`}
+          >
+            📜 Quá Khứ Đơn (Trang 29-31)
+          </button>
+          <button
             onClick={() => onNavChange('timeline')}
             className={`px-3 py-1.5 rounded-lg shrink-0 transition-all flex items-center gap-1.5 ${
               activeNav === 'timeline'

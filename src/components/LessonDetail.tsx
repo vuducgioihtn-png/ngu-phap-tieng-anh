@@ -14,6 +14,7 @@ import { PresentSimpleLab } from './PresentSimpleLab';
 import { PresentContinuousLab } from './PresentContinuousLab';
 import { PresentPerfectLab } from './PresentPerfectLab';
 import { PresentPerfectContinuousLab } from './PresentPerfectContinuousLab';
+import { PastSimpleLab } from './PastSimpleLab';
 
 interface LessonDetailProps {
   topic: GrammarTopic;
@@ -156,6 +157,7 @@ export const LessonDetail: React.FC<LessonDetailProps> = ({
           {topic.visualType === 'present_continuous_lab' && <PresentContinuousLab onOpenPdf={() => onOpenPdf(topic.pageNumber, topic.title)} />}
           {topic.visualType === 'present_perfect_lab' && <PresentPerfectLab onOpenPdf={() => onOpenPdf(topic.pageNumber, topic.title)} />}
           {topic.visualType === 'present_perfect_continuous_lab' && <PresentPerfectContinuousLab onOpenPdf={() => onOpenPdf(topic.pageNumber, topic.title)} />}
+          {topic.visualType === 'past_simple_lab' && <PastSimpleLab onOpenPdf={() => onOpenPdf(topic.pageNumber, topic.title)} />}
 
           {/* Color-Coded Formula Cards */}
           <div className="space-y-4">

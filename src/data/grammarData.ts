@@ -1066,79 +1066,96 @@ export const GRAMMAR_TOPICS: GrammarTopic[] = [
     id: 12,
     slug: 'past-simple',
     title: 'Quá Khứ Đơn (Past Simple)',
-    englishTitle: 'Past Simple Tense',
+    englishTitle: 'Past Simple Tense (Trang 29 - 31)',
     category: 'tenses',
     pageNumber: 29,
     difficulty: 'Cơ bản',
-    summary: 'Diễn tả hành động đã xảy ra và KẾT THÚC HOÀN TOÀN trong quá khứ với thời gian xác định rõ ràng.',
+    summary: 'Diễn tả hành động đã diễn ra và KẾT THÚC DỨT ĐIỂM trong quá khứ (Trang 29 - 31 sách Lê Công Đức). Phân biệt rành mạch nhánh TO BE (was / were) và nhánh Động từ thường (V-ed / V2 / didn\'t).',
     mnemonics: [
-      'Có mốc quá khứ (yesterday, ago, last..., in 2010): chia ngay Quá Khứ Đơn',
-      'Khi đã mượn trợ động từ DID hoặc DIDN\'T ➔ động từ chính trở về NGUYÊN MẪU (V1)',
-      'Động từ TO BE trong quá khứ chỉ có 2 chữ: WAS (cho I, he, she, it, số ít) & WERE (cho you, we, they, số nhiều)'
+      '⏳ Dấu hiệu nhận biết vàng: Last... (last night, last summer), ...ago (3 days ago, minutes ago), in 2000, from 1999 to 2010',
+      '🎯 To Be trong quá khứ: I, He, She, It, Danh từ số ít ➔ WAS | You, We, They, Danh từ số nhiều ➔ WERE',
+      '⚡ Động từ thường: Khẳng định dùng V-ed hoặc V2 (Bất quy tắc). Khi mượn trợ từ DID / DIDN\'T ➔ Động từ quay về NGUYÊN MẪU (V1)!',
+      '💡 Khác biệt sống còn với HTHT: "I lived in New York 3 years ago" (nay KHÔNG CÒN sống ở đó nữa), khác với "I have lived in NY for 3 years" (nay vẫn đang sống)'
     ],
     formulas: [
       {
-        label: 'Với TO BE',
-        structure: '(+) S + was/were\n(-) S + was not (wasn\'t) / were not (weren\'t)\n(?) Was/Were + S...?',
-        notes: 'I/He/She/It + was; We/You/They + were',
+        label: 'Nhánh 1: Với Động Từ TO BE (was / were)',
+        structure: '(+) S(I, He, She, It, N ít) + WAS | S(You, We, They, N nhiều) + WERE\n(-) wasn\'t (was not) / weren\'t (were not)\n(?) Was / Were + S ...? ➔ Yes, S was/were / No, S wasn\'t/weren\'t',
         example: {
-          en: 'We were in Korea three days ago.',
-          vi: 'Chúng tôi đã ở Hàn Quốc cách đây 3 ngày.',
+          en: 'We were in Korea three days ago, but Tom was on holiday.',
+          vi: 'Chúng tôi đã ở Hàn Quốc cách đây 3 ngày, còn Tom thì đi nghỉ mát (Trang 29).',
           breakdown: [
-            { label: 'S', text: 'We', color: 'bg-blue-100 text-blue-800' },
-            { label: 'Be (past)', text: 'were', color: 'bg-purple-100 text-purple-800' },
-            { label: 'Time marker', text: 'three days ago', color: 'bg-amber-100 text-amber-800' }
+            { label: 'S (nhiều)', text: 'We', color: 'bg-blue-100 text-blue-800' },
+            { label: 'were', text: 'were', color: 'bg-purple-100 text-purple-800' },
+            { label: 'Thời gian', text: 'three days ago', color: 'bg-amber-100 text-amber-800' }
           ]
         }
       },
       {
-        label: 'Với Động Từ Thường',
-        structure: '(+) S + V2/ed\n(-) S + didn\'t + V-nguyên mẫu\n(?) Did + S + V-nguyên mẫu...?',
+        label: 'Nhánh 2: Với Động Từ Thường (VERBS)',
+        structure: '(+) S + V-ED (có quy tắc) hoặc V2 (bảng bất quy tắc)\n(-) S + didn\'t + V(nguyên mẫu)\n(?) Did + S + V(nguyên mẫu) ...?',
         example: {
-          en: 'He came home late yesterday.',
-          vi: 'Anh ấy đã về nhà trễ ngày hôm qua.',
+          en: 'He came home late yesterday and she didn\'t work last Sunday.',
+          vi: 'Anh ấy đã về nhà trễ ngày hôm qua và cô ấy đã không đi làm vào chủ nhật tuần trước (Trang 29).',
           breakdown: [
             { label: 'S', text: 'He', color: 'bg-blue-100 text-blue-800' },
-            { label: 'V2 (bất quy tắc)', text: 'came', color: 'bg-purple-100 text-purple-800' },
-            { label: 'Thời gian', text: 'yesterday', color: 'bg-amber-100 text-amber-800' }
+            { label: 'V2 (come ➔ came)', text: 'came', color: 'bg-purple-100 text-purple-800' },
+            { label: 'didn\'t + V nguyên mẫu', text: "didn't work", color: 'bg-rose-100 text-rose-800' }
           ]
         }
       }
     ],
     detailedTheory: [
       {
-        heading: 'Sự khác biệt the chốt với Hiện Tại Hoàn Thành',
+        heading: 'Hai nhánh ngữ pháp và lưu ý dứt điểm',
         content: [
-          'Quá khứ đơn: Hành động đã chấm dứt hoàn toàn, có mốc thời gian (I lived in New York 3 years ago ➔ nay không còn sống ở đó).',
-          'Hiện tại hoàn thành: Không rõ thời gian hoặc kéo dài đến nay (I have lived in Rach Gia for 2 years ➔ nay vẫn đang sống).'
+          '1. Diễn tả hành động đã diễn ra và kết thúc (dứt điểm) trong quá khứ: "I lived in New York three years ago" (Hiện tại người nói không còn sống ở New York nữa mà là một nơi nào đó khác).',
+          '2. Dấu hiệu nhận biết: Last summer, last night, last Monday, last weekend; minutes ago, three years ago, long time ago; in 2000, from 1990 to 2000.',
+          '3. Khi dùng trợ động từ DID hoặc DIDN\'T: Bắt buộc động từ chính phải trở về dạng nguyên mẫu không "ed" và không chia bất quy tắc!'
         ]
       }
     ],
-    visualType: 'timeline',
+    visualType: 'past_simple_lab',
     exercises: [
       {
         id: 'ex-past-1',
         type: 'fill',
         prompt: 'They __________ (visit) their parents last week.',
-        contextHint: 'Động từ có quy tắc + last week',
+        contextHint: 'visit thêm ed',
         correctAnswer: 'visited',
-        explanation: 'Last week là dấu hiệu quá khứ đơn, động từ visit thêm ed ➔ visited.'
+        explanation: 'Last week là dấu hiệu quá khứ đơn, động từ visit thêm ed ➔ visited (Câu 2 Bài 1 Trang 31).'
       },
       {
         id: 'ex-past-2',
         type: 'fill',
         prompt: 'We __________ (not go) to school last Saturday.',
-        contextHint: 'Dạng phủ định với trợ động từ didn\'t',
+        contextHint: 'Phủ định với didn\'t + go',
         correctAnswer: ["didn't go", "did not go"],
-        explanation: 'Phủ định quá khứ đơn mượn didn\'t + động từ nguyên mẫu go.'
+        explanation: 'Phủ định quá khứ đơn mượn didn\'t + V nguyên mẫu ➔ didn\'t go (Câu 1 Bài 2 Trang 31).'
       },
       {
         id: 'ex-past-3',
         type: 'fill',
-        prompt: 'My father was a teacher from 1999 to 2012. He __________ (be) very dedicated.',
-        contextHint: 'Quá khứ của to be với my father',
+        prompt: 'My father __________ (be) a teacher from 1999 to 2012. Now he\'s a businessman.',
+        contextHint: 'My father là số ít trong quá khứ',
         correctAnswer: 'was',
-        explanation: 'Chủ ngữ my father là ngôi thứ ba số ít trong quá khứ dùng was.'
+        explanation: 'Chủ ngữ My father là số ít trong quá khứ dùng was (Câu 1 Bài 1 Trang 30).'
+      },
+      {
+        id: 'ex-past-4',
+        type: 'fill',
+        prompt: 'I __________ (come) to Vietnam last summer vacation.',
+        contextHint: 'come chuyển sang V2 bất quy tắc',
+        correctAnswer: 'came',
+        explanation: 'Động từ bất quy tắc của come là came (Câu 3 Bài 1 Trang 31).'
+      },
+      {
+        id: 'ex-past-5',
+        type: 'fill',
+        prompt: 'Where __________ (you / last night)? – At home.',
+        contextHint: 'Đặt câu hỏi với To Be cho you',
+        correctAnswer: ['were you', 'were you last night'],
+        explanation: 'You đi với were trong câu hỏi ➔ Where were you last night? (Câu 1 Bài 3 Trang 30).'
       }
     ]
   },
