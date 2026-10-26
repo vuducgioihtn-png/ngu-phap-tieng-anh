@@ -1,0 +1,6 @@
+{
+  "name": "GrammarVisi - Ngữ Pháp Tiếng Anh Trực Quan",
+  "description": "Ứng dụng học ngữ pháp tiếng Anh trực quan, dễ nhớ, dễ hiểu dựa trên giáo trình Ngữ Pháp Tiếng Anh Lê Công Đức với mindmap, timeline 12 thì, bộ chuyển đổi bị động, câu gián tiếp và bài tập tương tác.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
